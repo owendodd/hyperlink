@@ -36,14 +36,14 @@
 
                 <div class="sixteen columns">
                     <h4 ng-if="block.title" class="add-bottom">
-                        {{block.title}} 
+                        {{block.title}}
                         <span ng-if="block.class == 'Link'">
                             <a href="{{block.source.url}}" title="{{block.title}}">↳</a>
                         </span>
                         <span ng-if="block.class == 'Attachment'">
                             | <a href="{{block.source.url}}" title="{{block.title}}">Download</a>
                         </span>
-                    </h4> 
+                    </h4>
 
                     <div ng-if="block.class == 'Image'">
                         <figure>
@@ -79,10 +79,10 @@
         <script type="text/javascript">
             var app = angular.module('arenaApp', ['ngResource', 'ngSanitize']);
 
-            app.controller('channelShow', function($scope, $resource) { 
+            app.controller('channelShow', function($scope, $resource) {
               var Channel = $resource('http://api.are.na/v2/channels/:slug');
 
-              var channel = Channel.get({slug: 'arena-influences', sort: 'position', direction: 'asc'}, function(){
+              var channel = Channel.get({slug: 'hyperlink-foundation', sort: 'position', direction: 'asc'}, function(){
                 $scope.channel = channel;
               });
             })
