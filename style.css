@@ -33,12 +33,16 @@ body {
   position: aboslute;
   float: left;
   width:45%;
-  padding-left: 25px;
-}
+  margin-left: 25px;
+  border-top: 8px solid #0000FF;
+  background-color: rgba(0, 0, 0, 0.02);
+  padding: 10px;
+  max-width: 400px;
+  }
 
 #right_side{
   right: 0px;
   position: aboslute;
   float: right;
   width:50%;
-}
+  }
