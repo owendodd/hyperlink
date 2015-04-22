@@ -1,0 +1,13 @@
+#left_side{
+left: 0px;
+position: aboslute;
+float: left;
+width:50%;
+}
+
+#right_side{
+right: 0px;
+position: aboslute;
+float: right;
+width:50%;
+}

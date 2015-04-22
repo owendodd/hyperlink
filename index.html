@@ -6,6 +6,7 @@
         <title>Arena Influences</title>
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/skeleton/1.2/base.min.css">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/skeleton/1.2/skeleton.min.css">
+        <link rel="stylesheet" href="style.css">
         <script src="http://code.angularjs.org/1.1.5/angular.min.js"></script>
         <script src="http://code.angularjs.org/1.1.5/angular-resource.min.js"></script>
         <script src="http://code.angularjs.org/1.1.5/angular-sanitize.min.js"></script>
@@ -32,6 +33,7 @@
             </div>
 
             <!-- Channel contents loop -->
+            <div id="left_side">
             <div class="row add-bottom block" ng-repeat="block in channel.contents">
 
                 <div class="sixteen columns">
@@ -74,6 +76,7 @@
                 </div>
 
             </div>
+          </div>
             <!-- End Channel contents loop -->
         </div>
         <script type="text/javascript">
