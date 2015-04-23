@@ -7,7 +7,7 @@
     var connection = new WebSocket('ws:' + window.location.href.substring(window.location.protocol.length));
 
     connection.onopen = function () {
-        status.text('Choose name:');
+        status.text('Choose a name:');
     };
     connection.onmessage = function (message) {
       var json = JSON.parse(message.data);
@@ -17,7 +17,7 @@
         }else if (json.type === 'message') { // it's a single message
             addMessage(json.data.author, json.data.text,
                        json.data.color, new Date(json.data.time));
-        } 
+        }
     };
 
     input.keydown(function(e) {
