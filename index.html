@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>hyperlinkfoundation</title>
+        <title>HYPERLINKFOUNDATION</title>
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/skeleton/1.2/base.min.css">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/skeleton/1.2/skeleton.min.css">
         <link rel="stylesheet" href="style.css">
@@ -11,14 +11,35 @@
         <script src="http://code.angularjs.org/1.1.5/angular-resource.min.js"></script>
         <script src="http://code.angularjs.org/1.1.5/angular-sanitize.min.js"></script>
 
+        <script>
+        function startTime() {
+          var today=new Date();
+          var h=today.getHours();
+          var m=today.getMinutes();
+          var s=today.getSeconds();
+          m = checkTime(m);
+          s = checkTime(s);
+          document.getElementById('txt').innerHTML = h+":"+m+":"+s;
+          var t = setTimeout(function(){startTime()},500);
+        }
+
+        function checkTime(i) {
+          if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+        }
+      </script>
+
     </head>
-    <body ng-app="arenaApp">
+    <body ng-app="arenaApp" onload="startTime()">
+      <div class="back1"></div>
+      <div class="back2"></div>
 
         <div class="container" ng-controller="channelShow">
 
             <div class="row">
-                <div class="sixteen columns add-bottom">
-                    <h1 class="header">{{channel.title}}</h1>
+                <div class="add-bottom">
+                  <h1 id="txt"></h1>
+                    <h1 class="header">HYPERLINKFOUNDATION</h1>
                 </div>
                 <div class="eight columns offset-by-four">
                     <p ng-if="channel.metadata.description">{{channel.metadata.description}}</p>
@@ -29,7 +50,7 @@
             <div id="left_side">
             <div class="row add-bottom block" ng-repeat="block in channel.contents">
 
-                <div class="sixteen columns">
+                <div>
                     <h4 ng-if="block.title" class="add-bottom">
                         <span ng-if="block.class == 'Link'">
                             <a href="{{block.source.url}}" title="{{block.title}}">↳ {{block.title}}</a>
