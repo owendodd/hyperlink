@@ -28,6 +28,13 @@ body {
   border:1px solid #ccc;
   }
 
+.container {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  padding: 0;
+  }
+
 #left_side{
   left: 0px;
   position: aboslute;
@@ -38,6 +45,10 @@ body {
   background-color: rgba(0, 0, 0, 0.02);
   padding: 10px;
   max-width: 400px;
+  }
+
+  .container .left.columns {
+  width: 400px;
   }
 
 #right_side{
