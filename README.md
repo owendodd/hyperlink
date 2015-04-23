@@ -2,15 +2,18 @@
 ## A place for links to live.
 
 
-Using:
+How To:
 =============
 
 1. clone the repo
-2. install node [npm install]
-3. run app [app.js]
+2. install node 
+3. run app 
 
 
-In Terminal run these two lines to install node and run the app.
+In Terminal run these three lines to downlaod the repo, install node and run the app.
+First navigate to the directory you want to keep your site.
+
+>git clone https://github.com/owendodd/hyperlink.git
 
 >npm install
 
