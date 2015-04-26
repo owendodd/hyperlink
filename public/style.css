@@ -1,6 +1,7 @@
 body{
   font-family: sans-serif;
   margin-top: 0;
+  color: black;
 }
 .back1 {
   position: fixed;
@@ -26,6 +27,7 @@ body{
 }
 a{
   font-family: Arial, sans-serif;
+  color: #000 !important;
 }
 a:hover{
   color: red;
@@ -91,7 +93,7 @@ h4{
       padding: 6px 4px;
       outline: 0;
       font: 20px Arial, sans-serif;
-      color: #777;
+      color: #000;
       margin: 0;
       max-width:480px;
       width: 480px;
@@ -129,7 +131,6 @@ h4{
     border:1px solid #000 !important;
     background:rgba(0,0,0,0);
     border:0px;
-    margin-top:20px;
     padding:5px;
     box-shadow: none !important;
     display: inline-block;
