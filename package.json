@@ -1,5 +1,5 @@
 {
-  "name": "hyperlink  ",
+  "name": "hyperlink",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,6 +10,7 @@
     "ws": "*"
   },
   "engines": {
-    "npm":"1.1.65",
-  }
+    "npm": "1.1.65",
+    "node": "0.12.2"
+  },
 }
