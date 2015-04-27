@@ -9,6 +9,9 @@
     "express": "3.0.1",
     "ws": "*"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/owendodd/hyperlink"},
   "engines": {
     "npm": "1.1.65",
     "node": "0.12.2"
