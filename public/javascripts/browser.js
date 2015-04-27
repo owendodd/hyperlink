@@ -4,7 +4,7 @@
     var input = $('#input');
     var myColor = false;
     var myName = false;
-    var connection = new WebSocket('ws:' + window.location.href.substring(window.location.protocol.length));
+    var connection = new WebSocket('ws:https://' + window.location.href.substring(window.location.protocol.length));
 
     connection.onopen = function () {
         status.text('Choose a name:');
