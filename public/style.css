@@ -9,7 +9,7 @@ body{
   left:0;
   height: 100%;
   width:50%;
-  background-color: #FEF8D7;
+  background-color: #F0DFD1;
 }
 .back2 {
   position: fixed;
@@ -17,7 +17,7 @@ body{
   right:0;
   height: 100%;
   width:50%;
-  background-color: #DCFEF6;
+  background-color: #C1C7C5;
 }
 .block{
   margin-left:0;

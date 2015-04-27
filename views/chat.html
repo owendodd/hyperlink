@@ -50,29 +50,28 @@
 
             <div class="row add-bottom block" ng-repeat="block in channel.contents">
 
-                <div>
+
                     <h4 ng-if="block.title" class="add-bottom">
                         <span ng-if="block.class == 'Link'">
-                            <a href="{{block.source.url}}" title="{{block.title}}">{{block.title}}</a>
+                            <a href="{{block.source.url}}" title="{{block.title}}">
+                              {{block.title}}
+                              </a>
                         </span>
                     </h4>
 
                     <div ng-if="block.class == 'Channel'">
                         <h5 class="channel"><a href="#{{block.slug}}" title="">{{block.title}}</a></h5>
                     </div>
-                </div>
 
             </div>
           </div>
             <!-- End Channel contents loop -->
         </div>
-        <div>
         <div id="right_side">
           <div id="content"></div>
             <span id="status">Connecting...</span>
             <input type="text" id="input" />
         </div>
-      </div>
 
         <script src="javascripts/browser.js"></script>
         <script type="text/javascript">
