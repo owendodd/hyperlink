@@ -10,7 +10,7 @@ body{
   left:0;
   height: 100%;
   width:50%;
-  background-color: #F0DFD1;
+  background-color: #EEE;
 }
 .back2 {
   position: fixed;
@@ -18,7 +18,7 @@ body{
   right:0;
   height: 100%;
   width:50%;
-  background-color: #C1C7C5;
+  background-color: #EBEBEB;
 }
 .block{
   margin-left:0;
@@ -74,25 +74,28 @@ h4{
   }
 
 #left_side{
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
   left: 0px;
-  position: aboslute;
+  position: fixed;
   float: left;
   width:45%;
   margin-left: 2.5%;
-  padding-top: 100px;
-  height: 85vh;
+  margin-top: 10vh;
+  height: 80vh;
   overflow-y: scroll;
   }
 
 #right_side{
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
   right: 0px;
-  position: aboslute;
+  position: fixed;
   float: right;
   width:45%;
   margin-right: 2.5%;
-  padding-top: 100px;
-  height: 85vh;
-  overflow-y: scroll;
+  margin-top: 10vh;
+  height: 80vh;
   }
 
   input[type="text"], textarea, select{
@@ -124,8 +127,6 @@ h4{
   #content {
     padding:6px;
     background: rgba(0,0,0,0);
-    border:1px solid #000;
-    margin-top:10px;
     min-height:400px;
     height: 65vh;
     overflow: auto;
@@ -134,7 +135,7 @@ h4{
     min-width: 80%;
     max-width: 80%;
     border-radius: 0px;
-    border:1px solid #000 !important;
+    border-top:1px solid #000 !important;
     background:rgba(0,0,0,0);
     border:0px;
     padding:5px;
