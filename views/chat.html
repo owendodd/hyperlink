@@ -4,13 +4,13 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <title>HYPERLINKFOUNDATION</title>
-      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/skeleton/1.2/base.min.css">
-      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/skeleton/1.2/skeleton.min.css">
+      <link rel="stylesheet" href="/base.min.css">
+      <link rel="stylesheet" href="skeleton.min.css">
       <link rel="stylesheet" href="/style.css">
 
-      <script src="http://code.angularjs.org/1.1.5/angular.min.js"></script>
-      <script src="http://code.angularjs.org/1.1.5/angular-resource.min.js"></script>
-      <script src="http://code.angularjs.org/1.1.5/angular-sanitize.min.js"></script>
+      <script src="javascripts/angular.min.js"></script>
+      <script src="javascripts/angular-resource.min.js"></script>
+      <script src="javascripts/angular-sanitize.min.js"></script>
 
       <script>
       function startTime() {
@@ -78,7 +78,7 @@
             var app = angular.module('arenaApp', ['ngResource', 'ngSanitize']);
 
             app.controller('channelShow', function($scope, $resource) {
-              var Channel = $resource('http://api.are.na/v2/channels/:slug');
+              var Channel = $resource('https://api.are.na/v2/channels/:slug');
 
               var channel = Channel.get({slug: 'hyperlink-foundation', sort: 'position', direction: 'desc'}, function(){
                 $scope.channel = channel;
