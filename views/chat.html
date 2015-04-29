@@ -57,6 +57,10 @@
                               {{block.title}}
                               </a>
                         </span>
+                        <span ng-if="block.class == 'Attachment'">
+                          <a href="{{block.source.url}}" title="{{block.title}}" target="_blank">{{block.title}}</a>
+                        </span>
+                    </h4>
                     </h4>
 
                     <div ng-if="block.class == 'Channel'">
@@ -78,7 +82,7 @@
             var app = angular.module('arenaApp', ['ngResource', 'ngSanitize']);
 
             app.controller('channelShow', function($scope, $resource) {
-              var Channel = $resource('https://api.are.na/v2/channels/:slug');
+              var Channel = $resource('http://api.are.na/v2/channels/:slug');
 
               var channel = Channel.get({slug: 'hyperlink-foundation', sort: 'position', direction: 'desc'}, function(){
                 $scope.channel = channel;
