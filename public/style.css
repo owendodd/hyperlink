@@ -21,6 +21,8 @@ body{
   background-color: #FFF7E5;
 }
 .block{
+  margin-top: 20px;
+  margin-bottom: 10px;
   margin-left:0;
 
 }
@@ -85,7 +87,15 @@ h4{
   height: 80vh;
   overflow-y: scroll;
   }
-
+#left-side::-webkit-scrollbar {
+  display: none;
+  }
+#left-side::-ms-overflow-style {
+    width: 0 !important;
+    }
+#left-side::-moz-scrollbars-none {
+      width: 0 !important;
+      }
 #right_side{
   border-top: 1px solid #222;
   border-bottom: 1px solid #222;
@@ -104,8 +114,6 @@ h4{
       font: 20px Arial, sans-serif;
       color: #000;
       margin: 0;
-      max-width:480px;
-      width: 480px;
       display: block;
       margin-bottom: 20px;
       background: #fff
@@ -132,13 +140,15 @@ h4{
     overflow: auto;
     }
   #input {
-    min-width: 80%;
-    max-width: 80%;
+    display: block;
+    width: 45vw;
+    max-width: 45vw;
     border-radius: 0px;
     border-top:1px solid #000 !important;
     background:rgba(0,0,0,0);
     border:0px;
-    padding:5px;
+    padding-left: 0px ;
+    padding-top:9px;
     box-shadow: none !important;
     display: inline-block;
     }
