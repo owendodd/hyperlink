@@ -85,7 +85,7 @@
             var app = angular.module('arenaApp', ['ngResource', 'ngSanitize']);
 
             app.controller('channelShow', function($scope, $resource) {
-              var Channel = $resource('https://secure.are.na/v2/channels/:slug');
+              var Channel = $resource('http://api.are.na/v2/channels/:slug');
 
               var channel = Channel.get({slug: 'hyperlink-foundation', sort: 'position', direction: 'desc'}, function(){
                 $scope.channel = channel;
