@@ -10,7 +10,7 @@ body{
   left:0;
   height: 100%;
   width:50%;
-  background-color: #FBFCF7;
+  background-color: rgb(238, 238, 238);
 }
 .back2 {
   position: fixed;
@@ -18,7 +18,7 @@ body{
   right:0;
   height: 100%;
   width:50%;
-  background-color: #FFF7E5;
+  background-color: rgb(204, 242, 255);
 }
 .block{
   margin-top: 20px;
@@ -112,7 +112,7 @@ h4{
       display: block;
       background: #fff;
       min-height: 0px !important;
-      max-height: 30px !important;
+      max-height: 20px !important;
       bottom: 0;
     }
 .textinput{
@@ -153,7 +153,7 @@ h4{
     background-color:rgba(255,0,0,0);
     border:0px;
     padding-left: 0px ;
-    padding-top:18px;
+    padding-top:10px;
     box-shadow: none !important;
     display: inline-block;
     }
