@@ -48,7 +48,12 @@ h4{
 }
 .top {
   text-align: center;
+  height: 20vh;
+  width: 100%;
+  border-bottom: 1px solid #666;
+  position: fixed;
 }
+
 #hyper{
   left: 2.5%;
   position: fixed;
@@ -76,14 +81,12 @@ h4{
   }
 
 #left_side{
-  border-top: 1px solid #666;
-  border-bottom: 1px solid #666;
   left: 0px;
   position: fixed;
   float: left;
   width:45%;
   margin-left: 2.5%;
-  margin-top: 10vh;
+  margin-top: 20vh;
   height: 80vh;
   overflow-y: scroll;
   }
@@ -91,15 +94,13 @@ h4{
   display: none;
   }
 #right_side{
-  border-top: 1px solid #666;
-  border-bottom: 1px solid #666;
   right: 0px;
   position: fixed;
   float: right;
   width:45%;
   margin-right: 2.5%;
-  margin-top: 10vh;
-  height: 80vh;
+  margin-top: 20vh;
+  height: 70vh;
   overflow: hidden;
   }
 
@@ -120,8 +121,8 @@ h4{
   display: inline-block;
   position: absolute;
   bottom: 0;
-  border-top: 1px solid #666;
   width: 45vw;
+  height:50px;
 }
 
   * {
@@ -152,8 +153,8 @@ h4{
     border-radius: 0px;
     background-color:rgba(255,0,0,0);
     border:0px;
-    padding-left: 0px ;
-    padding-top:10px;
+    padding-left: 0px;
+    padding-top:30px;
     box-shadow: none !important;
     display: inline-block;
     }
@@ -164,11 +165,12 @@ h4{
     color: black;
     font-family: Arial, sans-serif;
     font-size: 20px;
-    display: inline-block !impo;
+    display: inline-block;
     float:left;
     margin-right: 30px;
     margin-top: -30px;
     }
   textarea {
     resize: none;
+    overflow: hidden;
     }
