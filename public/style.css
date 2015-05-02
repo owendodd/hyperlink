@@ -145,6 +145,7 @@ h4{
     padding: 0px;
     box-shadow: none !important;
     display: inline-block;
+    vertical-align: baseline;
     }
     #input:focus {
       color: black;
