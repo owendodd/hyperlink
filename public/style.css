@@ -113,7 +113,7 @@ h4{
       display: block;
       background: #fff;
       min-height: 0px !important;
-      max-height: 20px !important;
+      max-height: 30px !important;
       bottom: 0;
     }
 
@@ -146,6 +146,7 @@ h4{
     box-shadow: none !important;
     display: inline-block;
     vertical-align: baseline;
+    height: 21px;
     }
     #input:focus {
       color: black;
