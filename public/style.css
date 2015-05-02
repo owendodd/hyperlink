@@ -100,7 +100,7 @@ h4{
   width:45%;
   margin-right: 2.5%;
   margin-top: 20vh;
-  height: 70vh;
+  height: 80vh;
   overflow: hidden;
   }
 
@@ -116,14 +116,6 @@ h4{
       max-height: 20px !important;
       bottom: 0;
     }
-.textinput{
-  vertical-align: bottom;
-  display: inline-block;
-  position: absolute;
-  bottom: 0;
-  width: 45vw;
-  height:50px;
-}
 
   * {
     font-family: Arial, sans-serif;
@@ -145,16 +137,12 @@ h4{
     padding-bottom: 30px;
     }
   #input {
-    display: block;
-    width: 45vw;
-    max-width: 45vw;
-    width: 100%;
     overflow: hidden;
     border-radius: 0px;
     background-color:rgba(255,0,0,0);
     border:0px;
-    padding-left: 0px;
-    padding-top:30px;
+    margin-left: 20px;
+    padding: 0px;
     box-shadow: none !important;
     display: inline-block;
     }
@@ -167,8 +155,6 @@ h4{
     font-size: 20px;
     display: inline-block;
     float:left;
-    margin-right: 30px;
-    margin-top: -30px;
     }
   textarea {
     resize: none;
