@@ -142,13 +142,15 @@ h4{
     background-color:rgba(255,0,0,0);
     border:0px;
     margin-left: 20px;
-    margin-top:15px;
+    margin-top:10px;
+    padding: 0px;
+    padding-bottom: 0px;
     box-shadow: none !important;
     vertical-align: baseline;
     height: 21px;
     }
   #input:focus {
-    color: black;
+      color: black;
     }
   #status {
     color: black;
