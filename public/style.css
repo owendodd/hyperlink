@@ -115,6 +115,7 @@ h4{
       min-height: 0px !important;
       max-height: 30px !important;
       bottom: 0;
+      width: 100%;
     }
 
   * {
@@ -132,12 +133,11 @@ h4{
   #content {
     padding-top:20px;
     background: rgba(0,0,0,0);
-    height: 66vh;
+    height: 60vh;
     overflow: auto;
     padding-bottom: 30px;
     }
   #input {
-    overflow: hidden;
     border-radius: 0px;
     background-color:rgba(255,0,0,0);
     border:0px;
@@ -145,8 +145,8 @@ h4{
     margin-top:15px;
     padding: 0px;
     box-shadow: none !important;
-    vertical-align: center;
-    height: 21px;
+    vertical-align: baseline;
+    display: block;
     }
   #input:focus {
       color: black;
