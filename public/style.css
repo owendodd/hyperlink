@@ -141,11 +141,11 @@ h4{
     border-radius: 0px;
     background-color:rgba(255,0,0,0);
     border:0px;
-    margin-left: 20px;
+    line-height: 24px;
     margin-top:15px;
-    padding: 5px;
+    padding: 0px;
     box-shadow: none !important;
-    vertical-align: baseline;
+    vertical-align: center;
     height: 21px;
     }
   #input:focus {
@@ -154,6 +154,7 @@ h4{
   #status {
     color: black;
     font-family: Arial, sans-serif;
+    line-height: 24px;
     font-size: 20px;
     display: block;
     float:left;
