@@ -14,6 +14,15 @@
          if (json.type === 'color') { // first response from the server with user's color
             myColor = json.data;
             status.text(myName + ': ').css('color', myColor);
+          } else if (json.type === 'history') { // entire message history
+                  // insert every single message to the chat window
+                  var history = []
+                    , i = 0;
+
+                  for (i=0; i < json.data.length; i++) {
+                      history.push(app.bundledMessage(json.data[i]));
+                  }
+                  app.messages.add(history);
         }else if (json.type === 'message') { // it's a single message
             addMessage(json.data.author, json.data.text,
                        json.data.color, new Date(json.data.time));
