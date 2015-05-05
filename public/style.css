@@ -10,7 +10,7 @@ body{
   left:0;
   height: 100%;
   width:50%;
-  background-color: rgb(238, 238, 238);
+  background-color: white;
 }
 .back2 {
   position: fixed;
@@ -18,7 +18,7 @@ body{
   right:0;
   height: 100%;
   width:50%;
-  background-color: rgb(204, 242, 255);
+  background-color: #ECF7FD;
 }
 .block{
   margin-top: 20px;
@@ -32,6 +32,8 @@ body{
 a{
   font-family: Arial, sans-serif;
   color: #000 !important;
+  text-decoration: none;
+  border-bottom: 1px dashed #000;
 }
 a:hover{
   color: red;
